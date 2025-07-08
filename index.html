@@ -847,14 +847,14 @@
 
     <script>
         // Firebase Configuration - Updated with your new config
-        const firebaseConfig = {
-            apiKey: "AIzaSyCRaMvRolAC4d1sLyNjeag8AOrSuR-8-KE",
-            authDomain: "twr-beta-790f2.firebaseapp.com",
-            projectId: "twr-beta-790f2",
-            storageBucket: "twr-beta-790f2.firebasestorage.app",
-            messagingSenderId: "836135798463",
-            appId: "1:836135798463:web:867e118bfa5440bc03e80a"
-        };
+       const firebaseConfig = {
+  apiKey: "AIzaSyCRaMvRolAC4d1sLyNjeag8AOrSuR-8-KE",
+  authDomain: "twr-beta-790f2.firebaseapp.com",
+  projectId: "twr-beta-790f2",
+  storageBucket: "twr-beta-790f2.firebasestorage.app",
+  messagingSenderId: "836135798463",
+  appId: "1:836135798463:web:867e118bfa5440bc03e80a"
+};
 
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
@@ -1013,14 +1013,7 @@
             return isValid;
         }
 
-        // Add validation before submit
-        form.addEventListener('submit', (e) => {
-            if (!validateCheckboxGroups()) {
-                e.preventDefault();
-                alert('Please complete all required sections (marked with *)');
-                return false;
-            }
-        });
+        
 
         // Auto-save to localStorage
         function autoSave() {
